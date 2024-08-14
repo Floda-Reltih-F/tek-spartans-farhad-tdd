@@ -1,11 +1,14 @@
 package playground;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class MyFirstTest {
+    @BeforeClass
+    public void runBeforeClass(){
+        System.out.println("before classes");
+    }
+
+
     @BeforeMethod
     public void runBeforeTest(){
         System.out.println("before each shit methode");
